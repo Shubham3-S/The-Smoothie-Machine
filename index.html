@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information about the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section containing the title -->
+    <header>
+        <h1>Smoothie Machine</h1>
+    </header>
+    <!-- Main content area where the smoothie form is located -->
+    <main>
+        <form id="smoothie-form">
+            <h2>Order Your Smoothie</h2>
+            <!-- Input for the smoothie name -->
+            <label for="smoothie-name">Smoothie Name:</label>
+            <input type="text" id="smoothie-name" name="smoothie-name"><br><br>
+
+            <!-- Dropdown for selecting the type of fruit -->
+            <label for="fruit">Fruit:</label>
+            <select id="fruit" name="fruit">
+                <option value="strawberry">Strawberry</option>
+                <option value="banana">Banana</option>
+                <option value="mango">Mango</option>
+                <option value="pineapple">Pineapple</option>
+            </select><br><br>
+
+            <!-- Dropdown for selecting the type of milk -->
+            <label for="milk">Milk:</label>
+            <select id="milk" name="milk">
+                <option value="almond">Almond Milk</option>
+                <option value="soy">Soy Milk</option>
+                <option value="coconut">Coconut Milk</option>
+                <option value="dairy">Dairy Milk</option>
+            </select><br><br>
+
+            <!-- Checkbox options for selecting toppings -->
+            <label for="toppings">Toppings:</label>
+            <input type="checkbox" id="whipped-cream" name="toppings" value="whipped-cream">
+            <label for="whipped-cream">Whipped Cream</label>
+            <input type="checkbox" id="sprinkles" name="toppings" value="sprinkles">
+            <label for="sprinkles">Sprinkles</label>
+            <input type="checkbox" id="chocolate-chips" name="toppings" value="chocolate-chips">
+            <label for="chocolate-chips">Chocolate Chips</label><br><br>
+
+            <!-- Button to submit the order -->
+            <button id="order-btn">Order Now!</button>
+        </form>
+        <!-- Div to display the output after submitting the form -->
+        <div id="smoothie-output"></div>
+    </main>
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
